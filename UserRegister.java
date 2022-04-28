@@ -17,4 +17,16 @@ public class UserRegister {
         else
             System.out.println("Invalid First Name");
     }
+
+    /*
+     * lastName method created in which Last Name starts with Cap and has minimum 3 Characters.
+     */
+    public static void lastName() {
+        System.out.println("Enter Last Name: ");
+        String lastName = scanner.nextLine();
+        if (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName) == true)
+            System.out.println("Valid Last Name");
+        else
+            System.out.println("Invalid Last Name");
+    }
 }
