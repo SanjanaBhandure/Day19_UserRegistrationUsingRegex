@@ -10,7 +10,7 @@ public class UserRegister {
      * firstName method created in which First Name starts with Cap and has minimum 3 Characters.
      */
     public static void firstName() {
-        System.out.println("Enter First Name");
+        System.out.println("Enter First Name: ");
         String firstName = scanner.nextLine();
         if (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", firstName) == true)
             System.out.println("Valid First Name");
