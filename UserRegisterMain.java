@@ -1,10 +1,10 @@
 /*
  * The User Registration System program implements an application that needs
  * to ensure all validations are in place during the User Entry.
- * UC2: As a User need to enter a valid Last Name.
+ * UC3: As a User need to enter a valid Email.
  *
  * @author: Sanjana Bhandure
- * @version: 1.1
+ * @version: 1.2
  * @date: 29-04-2022
  */
 
@@ -15,5 +15,6 @@ public class UserRegisterMain {
         //method calling
         UserRegister.firstName();
         UserRegister.lastName();
+        UserRegister.email();
     }
 }

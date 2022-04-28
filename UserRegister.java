@@ -29,4 +29,16 @@ public class UserRegister {
         else
             System.out.println("Invalid Last Name");
     }
+
+    /*
+     * email method created in which Email has 3 mandatory conditions
+     */
+    public static void email() {
+        System.out.println("Enter Valid Email: ");
+        String email = scanner.nextLine();
+        if (Pattern.matches("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", email) == true)
+            System.out.println("Valid Email");
+        else
+            System.out.println("Invalid Email");
+    }
 }
