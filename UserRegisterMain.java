@@ -1,10 +1,10 @@
 /*
  * The User Registration System program implements an application that needs
  * to ensure all validations are in place during the User Entry.
- * UC3: As a User need to enter a valid Email.
+ * UC4: As a User need to follow pre-defined Mobile Format.
  *
  * @author: Sanjana Bhandure
- * @version: 1.2
+ * @version: 1.3
  * @date: 29-04-2022
  */
 
@@ -16,5 +16,6 @@ public class UserRegisterMain {
         UserRegister.firstName();
         UserRegister.lastName();
         UserRegister.email();
+        UserRegister.phoneNumber();
     }
 }

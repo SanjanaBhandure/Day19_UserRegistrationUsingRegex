@@ -41,4 +41,17 @@ public class UserRegister {
         else
             System.out.println("Invalid Email");
     }
+
+    /*
+     * phoneNumber method created
+     * E.g. 91 9919819801 - Country code follow by space and 10 digit number
+     */
+    public static void phoneNumber() {
+        System.out.println("Enter phone Number with country code(space between country code and phone Number): ");
+        String phoneNumber = scanner.nextLine();
+        if (Pattern.matches("^[1-9]{2}\\s{1}[1-9]{1}[0-9]{9}$", phoneNumber) == true)
+            System.out.println("Valid Phone Number");
+        else
+            System.out.println("Invalid Phone Number");
+    }
 }
