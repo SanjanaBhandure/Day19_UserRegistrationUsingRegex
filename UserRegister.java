@@ -56,13 +56,13 @@ public class UserRegister {
     }
 
     /*
-     *  password method created should have at least 1 UpperCase.
+     *  password method created should have at least 1 numeric number in the password.
      */
     public static void password() {
         System.out.println("Enter Password: ");
         Scanner scanner = new Scanner(System.in);
         String password = scanner.nextLine();
-        if (Pattern.matches("^[A-Z]{1}[A-Za-z0-9,@#$&*().]{8,}[A-Za-z0-9]$", password) == true)
+        if (Pattern.matches("^[A-Z]{1}[A-Za-z0-9,@#$&*().]{8,}[0-9]{1,}[A-Za-z]$", password) == true)
             System.out.println("Valid Password");
         else
             System.out.println("Invalid Password");
