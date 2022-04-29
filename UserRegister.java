@@ -31,7 +31,7 @@ public class UserRegister {
     }
 
     /*
-     * email method created in which Email has 3 mandatory conditions
+     * email method created to clear all email samples provided separately.
      */
     public static void email() {
         System.out.println("Enter Valid Email: ");
