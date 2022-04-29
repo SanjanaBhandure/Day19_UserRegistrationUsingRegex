@@ -2,10 +2,10 @@
  * The User Registration System program implements an application that needs
  * to ensure all validations are in place during the User Entry.
  * UC5: As a User need to follow pre-defined Password rules.
- * Rule 3: Should have at least 1 numeric number in the password.
+ * Rule 4: Should have exactly 1 Special character.
  *
  * @author: Sanjana Bhandure
- * @version: 1.6
+ * @version: 1.8
  * @date: 29-04-2022
  */
 
