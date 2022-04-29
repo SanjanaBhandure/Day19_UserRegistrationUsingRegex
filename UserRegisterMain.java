@@ -1,10 +1,11 @@
 /*
  * The User Registration System program implements an application that needs
  * to ensure all validations are in place during the User Entry.
- * UC4: As a User need to follow pre-defined Mobile Format.
+ * UC5: As a User need to follow pre-defined Password rules.
+ * Rule 1: minimum 8 characters.
  *
  * @author: Sanjana Bhandure
- * @version: 1.3
+ * @version: 1.4
  * @date: 29-04-2022
  */
 
@@ -17,5 +18,6 @@ public class UserRegisterMain {
         UserRegister.lastName();
         UserRegister.email();
         UserRegister.phoneNumber();
+        UserRegister.password();
     }
 }
