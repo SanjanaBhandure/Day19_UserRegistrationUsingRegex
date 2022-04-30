@@ -14,4 +14,13 @@ public class UserRegisterTestCase {
         boolean actualResult = UserRegister.isValidFirstName("Sanjana");
         Assert.assertTrue("Sanjana", true);
     }
+
+    /*
+     * isValidLastNameTestCase
+     */
+    @Test
+    public void isValidLastNameTestCase() {
+        boolean actualResult = UserRegister.isValidLastName("Bhandure");
+        Assert.assertTrue("Bhandure", true);
+    }
 }
