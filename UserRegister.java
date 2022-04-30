@@ -11,18 +11,14 @@ public class UserRegister {
     }
 
     /*
-     * isValidlastName method created in which Last Name starts with Cap and has minimum 3 Characters.
+     * lastName method created in which Last Name starts with Cap and has minimum 3 Characters.
      */
     public static boolean isValidLastName(String lastName) {
         return Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lastName);
     }
 
     /*
-<<<<<<< HEAD
      * isValidEmail created to clear all email samples provided separately
-=======
-     *  isValidEmail method created to clear all email samples provided separately.
->>>>>>> a3c7c194f1cd93d98386e821899a3776cbbb5926
      */
     public static boolean isValidEmail(String email) {
         return Pattern.matches("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", email);
@@ -34,5 +30,12 @@ public class UserRegister {
      */
     public static boolean isValidPhoneNumber(String phoneNumber) {
         return Pattern.matches("^[1-9]{2}\\s{1}[1-9]{1}[0-9]{9}$", phoneNumber);
+    }
+
+    /*
+     * isValidPassword method created that should have minimum 8 characters.
+     */
+    public static boolean isValidPassword(String password) {
+        return Pattern.matches("^[A-Z a-z 0-9]{8,}$", password);
     }
 }

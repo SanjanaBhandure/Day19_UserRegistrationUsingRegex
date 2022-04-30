@@ -7,8 +7,8 @@ import org.junit.Test;
 
 public class UserRegisterTestCase {
 
-    /*
-     * isValidFirstNameTestCase
+    /*Added: As a User need to follow pre-defined
+     * isValidFirstNameTestCase created to validate first name
      */
     @Test
     public void isValidFirstNameTestCase() {
@@ -17,7 +17,7 @@ public class UserRegisterTestCase {
     }
 
     /*
-     * isValidLastNameTestCase
+     * isValidLastNameTestCase created to validate last name
      */
     @Test
     public void isValidLastNameTestCase() {
@@ -26,7 +26,7 @@ public class UserRegisterTestCase {
     }
 
     /*
-     * isValidEmailTestCase
+     * isValidEmailTestCase created to validate email
      */
     @Test
     public void isValidEmailTestCase() {
@@ -35,7 +35,7 @@ public class UserRegisterTestCase {
     }
 
     /*
-     * isValidEmailTestCase
+     * isValidEmailTestCase created to validate phone number
      */
     @Test
     public void isValidPhoneNumberTestCase() {
@@ -43,4 +43,13 @@ public class UserRegisterTestCase {
         Assert.assertTrue("91 90000000000", true);
     }
 
+
+    /*
+     * isValidEmailTestCase created to validate password
+     */
+    @Test
+    public void isValidPasswordTestCase() {
+        boolean actualResult = UserRegister.isValidPassword("abcde1234");
+        Assert.assertTrue("abcde1234", true);
+    }
 }
