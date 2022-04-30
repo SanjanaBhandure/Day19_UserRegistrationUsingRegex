@@ -7,7 +7,7 @@ import org.junit.Test;
 public class UserRegisterTestCase {
 
     /*
-     * isValidFirstNameTestCase
+     * isValidFirstNameTestCase created to validate first name.
      */
     @Test
     public void isValidFirstNameTestCase() {
