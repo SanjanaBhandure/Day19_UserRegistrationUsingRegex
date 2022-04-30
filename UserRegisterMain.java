@@ -1,10 +1,11 @@
 /*
  * The User Registration System program implements an application that needs
  * to ensure all validations are in place during the User Entry.
- * UC3: As a User need to enter a valid email.
+ * UC4: As a User need to follow pre-defined.
+ * Mobile Format - E.g. 91 9919819801 - Country code follow by space.
  *
  * @author: Sanjana Bhandure
- * @version: 1.2
+ * @version: 1.4
  * @date: 1-05-2022
  */
 
@@ -27,5 +28,9 @@ public class UserRegisterMain {
         System.out.println("Enter Email: ");
         String email = scanner.nextLine();
         System.out.println(UserRegister.isValidEmail(email));
+
+        System.out.println("Enter phone Number with country code(space between country code and phone Number): ");
+        String phoneNumber = scanner.nextLine();
+        System.out.println(UserRegister.isValidPhoneNumber(phoneNumber));
     }
 }

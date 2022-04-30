@@ -34,5 +34,13 @@ public class UserRegisterTestCase {
         Assert.assertTrue("abc@gmail.com", true);
     }
 
+    /*
+     * isValidEmailTestCase
+     */
+    @Test
+    public void isValidPhoneNumberTestCase() {
+        boolean actualResult = UserRegister.isValidPhoneNumber("91 90000000000");
+        Assert.assertTrue("91 90000000000", true);
+    }
 
 }
