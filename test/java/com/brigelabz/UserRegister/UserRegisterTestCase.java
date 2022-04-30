@@ -4,6 +4,7 @@ import com.Bridgelabz.Day19_RegexUserRegistrationProblem.UserRegister;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class UserRegisterTestCase {
 
     /*
@@ -23,4 +24,15 @@ public class UserRegisterTestCase {
         boolean actualResult = UserRegister.isValidLastName("Bhandure");
         Assert.assertTrue("Bhandure", true);
     }
+
+    /*
+     * isValidEmailTestCase
+     */
+    @Test
+    public void isValidEmailTestCase() {
+        boolean actualResult = UserRegister.isValidEmail("abc@gmail.com");
+        Assert.assertTrue("abc@gmail.com", true);
+    }
+
+
 }
