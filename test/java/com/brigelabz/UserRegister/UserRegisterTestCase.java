@@ -49,7 +49,7 @@ public class UserRegisterTestCase {
      */
     @Test
     public void isValidPasswordTestCase() {
-        boolean actualResult = UserRegister.isValidPassword("abcde1234");
-        Assert.assertTrue("abcde1234", true);
+        boolean actualResult = UserRegister.isValidPassword("Abcde@1234");
+        Assert.assertTrue("Abcde@1234", true);
     }
 }
