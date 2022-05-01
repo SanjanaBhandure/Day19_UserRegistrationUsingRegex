@@ -18,7 +18,7 @@ public class UserRegister {
     }
 
     /*
-     * isValidEmail created to clear all email samples provided separately
+     * isValidEmail created to validate email
      */
     public static boolean isValidEmail(String email) {
         return Pattern.matches("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$", email);
